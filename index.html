@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Конвертер від Юрчика</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form>
+  <h1>Конвертер від Юрчика</h1>
+  <label>Виберіть одиницю вимірювання, яку потрібно конвертувати:</label>
+  <select id="unitFrom">
+    <option value="m">Метры (m)</option>
+    <option value="cm">Сантиметры (cm)</option>
+    <option value="in">Дюймы (in)</option>
+    <option value="mm">Миллиметры (mm)</option>
+    <option value="yd">Ярды (yd)</option>
+    <option value="km">Километры (km)</option>
+    <option value="ft">Футы (ft)</option>
+  </select>
+  <br>
+  <label>Введіть значення:</label>
+  <input type="number" id="valueFrom" step="0.01">
+  <br>
+  <label>Виберіть одиницю вимірювання, яку хочете конвертувати:</label>
+  <select id="unitTo">
+    <option value="m">Метры (m)</option>
+    <option value="cm">Сантиметры (cm)</option>
+    <option value="in">Дюймы (in)</option>
+    <option value="mm">Миллиметры (mm)</option>
+    <option value="yd">Ярды (yd)</option>
+    <option value="km">Километры (km)</option>
+    <option value="ft">Футы (ft)</option>
+  </select>
+  <br>
+  <button type="button" onclick="convert()">Конвертувати</button>
+</form>
+<br>
+<h2>Результат:</h2>
+<p id="result"></p>
+<script src="converter.js"></script>
+</body>
+</html>
